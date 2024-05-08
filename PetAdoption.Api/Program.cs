@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using PetAdoption.Api.Data;
+using PetAdoption.Api.Utilities;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +19,7 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    ApplyMigration.ApplyDbMigration(app.Services);
     app.UseSwagger();
     app.UseSwaggerUI();
 }
@@ -29,3 +31,4 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
