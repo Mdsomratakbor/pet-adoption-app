@@ -9,7 +9,7 @@ namespace PetAdoption.Shared.Dtos
     public record ApiResponseDto(bool IsSuccess, string? Message = null)
     {
         public static ApiResponseDto Success() => new (true, null);
-        public static ApiResponseDto Failure() => new (false, null);
+        public static ApiResponseDto Fail(string? message) => new (false, message);
     }
     public record ApiResponseDto<TData>(bool IsSuccess, TData Data, string? Message)
     {
