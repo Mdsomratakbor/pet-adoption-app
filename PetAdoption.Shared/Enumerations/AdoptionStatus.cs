@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace PetAdoption.Shared.Enumerations
 {
-    internal class AdoptionStatus
+    public enum AdoptionStatus
     {
+        Available = 1,
+        Adopted = 2
     }
 }

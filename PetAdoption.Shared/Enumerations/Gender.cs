@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace PetAdoption.Shared.Enumerations
 {
-    internal class Gender
+    public enum Gender
     {
+        Male = 0,
+        Female = 1
     }
 }

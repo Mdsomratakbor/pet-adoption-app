@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PetAdoption.Shared.Dtos
 {
-    public class AuthResponseDto
-    {
-    }
+
+        public record AuthResponseDto (int UserId, string Name, string Token);
+    
 }
