@@ -1,0 +1,202 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}|PetAdoption.Shared\\PetAdoption.Shared.csproj|d:\\personalproject\\mobileapplications\\petadoption\\petadoption.shared\\enumerations\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}|PetAdoption.Shared\\PetAdoption.Shared.csproj|solutionrelative:petadoption.shared\\enumerations\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}|PetAdoption.Shared\\PetAdoption.Shared.csproj|d:\\personalproject\\mobileapplications\\petadoption\\petadoption.shared\\enumerations\\adoptionstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}|PetAdoption.Shared\\PetAdoption.Shared.csproj|solutionrelative:petadoption.shared\\enumerations\\adoptionstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}|PetAdoption.Shared\\PetAdoption.Shared.csproj|d:\\personalproject\\mobileapplications\\petadoption\\petadoption.shared\\dtos\\singlevaluedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}|PetAdoption.Shared\\PetAdoption.Shared.csproj|solutionrelative:petadoption.shared\\dtos\\singlevaluedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}|PetAdoption.Shared\\PetAdoption.Shared.csproj|d:\\personalproject\\mobileapplications\\petadoption\\petadoption.shared\\dtos\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}|PetAdoption.Shared\\PetAdoption.Shared.csproj|solutionrelative:petadoption.shared\\dtos\\registerrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}|PetAdoption.Shared\\PetAdoption.Shared.csproj|d:\\personalproject\\mobileapplications\\petadoption\\petadoption.shared\\dtos\\petlistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}|PetAdoption.Shared\\PetAdoption.Shared.csproj|solutionrelative:petadoption.shared\\dtos\\petlistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}|PetAdoption.Shared\\PetAdoption.Shared.csproj|d:\\personalproject\\mobileapplications\\petadoption\\petadoption.shared\\dtos\\petdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}|PetAdoption.Shared\\PetAdoption.Shared.csproj|solutionrelative:petadoption.shared\\dtos\\petdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}|PetAdoption.Shared\\PetAdoption.Shared.csproj|d:\\personalproject\\mobileapplications\\petadoption\\petadoption.shared\\dtos\\apiresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}|PetAdoption.Shared\\PetAdoption.Shared.csproj|solutionrelative:petadoption.shared\\dtos\\apiresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}|PetAdoption.Shared\\PetAdoption.Shared.csproj|d:\\personalproject\\mobileapplications\\petadoption\\petadoption.shared\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}|PetAdoption.Shared\\PetAdoption.Shared.csproj|solutionrelative:petadoption.shared\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}|PetAdoption.Shared\\PetAdoption.Shared.csproj|d:\\personalproject\\mobileapplications\\petadoption\\petadoption.shared\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}|PetAdoption.Shared\\PetAdoption.Shared.csproj|solutionrelative:petadoption.shared\\dtos\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}|PetAdoption.Shared\\PetAdoption.Shared.csproj|d:\\personalproject\\mobileapplications\\petadoption\\petadoption.shared\\petadoption.shared.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}|PetAdoption.Shared\\PetAdoption.Shared.csproj|solutionrelative:petadoption.shared\\petadoption.shared.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Gender.cs",
+              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Shared\\Enumerations\\Gender.cs",
+              "RelativeDocumentMoniker": "PetAdoption.Shared\\Enumerations\\Gender.cs",
+              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Shared\\Enumerations\\Gender.cs",
+              "RelativeToolTip": "PetAdoption.Shared\\Enumerations\\Gender.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T05:39:22.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdoptionStatus.cs",
+              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Shared\\Enumerations\\AdoptionStatus.cs",
+              "RelativeDocumentMoniker": "PetAdoption.Shared\\Enumerations\\AdoptionStatus.cs",
+              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Shared\\Enumerations\\AdoptionStatus.cs",
+              "RelativeToolTip": "PetAdoption.Shared\\Enumerations\\AdoptionStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T05:39:11.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SingleValueDto.cs",
+              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Shared\\Dtos\\SingleValueDto.cs",
+              "RelativeDocumentMoniker": "PetAdoption.Shared\\Dtos\\SingleValueDto.cs",
+              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Shared\\Dtos\\SingleValueDto.cs",
+              "RelativeToolTip": "PetAdoption.Shared\\Dtos\\SingleValueDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T05:38:49.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterRequestDto.cs",
+              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Shared\\Dtos\\RegisterRequestDto.cs",
+              "RelativeDocumentMoniker": "PetAdoption.Shared\\Dtos\\RegisterRequestDto.cs",
+              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Shared\\Dtos\\RegisterRequestDto.cs",
+              "RelativeToolTip": "PetAdoption.Shared\\Dtos\\RegisterRequestDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T05:38:32.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PetListDto.cs",
+              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Shared\\Dtos\\PetListDto.cs",
+              "RelativeDocumentMoniker": "PetAdoption.Shared\\Dtos\\PetListDto.cs",
+              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Shared\\Dtos\\PetListDto.cs",
+              "RelativeToolTip": "PetAdoption.Shared\\Dtos\\PetListDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T05:38:13.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PetDetailDto.cs",
+              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Shared\\Dtos\\PetDetailDto.cs",
+              "RelativeDocumentMoniker": "PetAdoption.Shared\\Dtos\\PetDetailDto.cs",
+              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Shared\\Dtos\\PetDetailDto.cs",
+              "RelativeToolTip": "PetAdoption.Shared\\Dtos\\PetDetailDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T05:37:58.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginRequestDto.cs",
+              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Shared\\Dtos\\LoginRequestDto.cs",
+              "RelativeDocumentMoniker": "PetAdoption.Shared\\Dtos\\LoginRequestDto.cs",
+              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Shared\\Dtos\\LoginRequestDto.cs",
+              "RelativeToolTip": "PetAdoption.Shared\\Dtos\\LoginRequestDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T05:37:23.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthResponseDto.cs",
+              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Shared\\Dtos\\AuthResponseDto.cs",
+              "RelativeDocumentMoniker": "PetAdoption.Shared\\Dtos\\AuthResponseDto.cs",
+              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Shared\\Dtos\\AuthResponseDto.cs",
+              "RelativeToolTip": "PetAdoption.Shared\\Dtos\\AuthResponseDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T05:36:38.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApiResponseDto.cs",
+              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Shared\\Dtos\\ApiResponseDto.cs",
+              "RelativeDocumentMoniker": "PetAdoption.Shared\\Dtos\\ApiResponseDto.cs",
+              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Shared\\Dtos\\ApiResponseDto.cs",
+              "RelativeToolTip": "PetAdoption.Shared\\Dtos\\ApiResponseDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T05:35:46.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PetAdoption.Shared",
+              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Shared\\PetAdoption.Shared.csproj",
+              "RelativeDocumentMoniker": "PetAdoption.Shared\\PetAdoption.Shared.csproj",
+              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Shared\\PetAdoption.Shared.csproj",
+              "RelativeToolTip": "PetAdoption.Shared\\PetAdoption.Shared.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-08T05:35:16.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
