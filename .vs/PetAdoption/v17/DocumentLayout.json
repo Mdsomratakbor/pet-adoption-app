@@ -3,68 +3,8 @@
   "WorkspaceRootPath": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|D:\\PersonalProject\\MobileApplications\\PetAdoption\\petadoption.mobile\\pages\\onboardingpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|solutionrelative:petadoption.mobile\\pages\\onboardingpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|D:\\PersonalProject\\MobileApplications\\PetAdoption\\petadoption.mobile\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|solutionrelative:petadoption.mobile\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|D:\\PersonalProject\\MobileApplications\\PetAdoption\\petadoption.mobile\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|solutionrelative:petadoption.mobile\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|D:\\PersonalProject\\MobileApplications\\PetAdoption\\petadoption.mobile\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|solutionrelative:petadoption.mobile\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|d:\\personalproject\\mobileapplications\\petadoption\\petadoption.mobile\\pages\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|solutionrelative:petadoption.mobile\\pages\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|d:\\personalproject\\mobileapplications\\petadoption\\petadoption.mobile\\pages\\loginregistrationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|solutionrelative:petadoption.mobile\\pages\\loginregistrationpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|D:\\PersonalProject\\MobileApplications\\PetAdoption\\petadoption.mobile\\pages\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|solutionrelative:petadoption.mobile\\pages\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|D:\\PersonalProject\\MobileApplications\\PetAdoption\\petadoption.mobile\\pages\\loginregistrationpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|solutionrelative:petadoption.mobile\\pages\\loginregistrationpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|D:\\PersonalProject\\MobileApplications\\PetAdoption\\petadoption.mobile\\pages\\onboardingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|solutionrelative:petadoption.mobile\\pages\\onboardingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|D:\\PersonalProject\\MobileApplications\\PetAdoption\\petadoption.mobile\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|solutionrelative:petadoption.mobile\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|D:\\PersonalProject\\MobileApplications\\PetAdoption\\petadoption.mobile\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|solutionrelative:petadoption.mobile\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|D:\\PersonalProject\\MobileApplications\\PetAdoption\\petadoption.mobile\\resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|solutionrelative:petadoption.mobile\\resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|D:\\PersonalProject\\MobileApplications\\PetAdoption\\petadoption.mobile\\resources\\raw\\aboutassets.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|solutionrelative:petadoption.mobile\\resources\\raw\\aboutassets.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|D:\\PersonalProject\\MobileApplications\\PetAdoption\\petadoption.mobile\\resources\\splash\\splash.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|solutionrelative:petadoption.mobile\\resources\\splash\\splash.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|D:\\PersonalProject\\MobileApplications\\PetAdoption\\petadoption.mobile\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|solutionrelative:petadoption.mobile\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|D:\\PersonalProject\\MobileApplications\\PetAdoption\\petadoption.mobile\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|solutionrelative:petadoption.mobile\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}|PetAdoption.Shared\\PetAdoption.Shared.csproj|d:\\personalproject\\mobileapplications\\petadoption\\petadoption.shared\\appconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}|PetAdoption.Shared\\PetAdoption.Shared.csproj|solutionrelative:petadoption.shared\\appconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,204 +30,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HomePage.xaml.cs",
-              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\Pages\\HomePage.xaml.cs",
-              "RelativeDocumentMoniker": "PetAdoption.Mobile\\Pages\\HomePage.xaml.cs",
-              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\Pages\\HomePage.xaml.cs",
-              "RelativeToolTip": "PetAdoption.Mobile\\Pages\\HomePage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T14:11:34.03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginRegistrationPage.xaml",
-              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\Pages\\LoginRegistrationPage.xaml",
-              "RelativeDocumentMoniker": "PetAdoption.Mobile\\Pages\\LoginRegistrationPage.xaml",
-              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\Pages\\LoginRegistrationPage.xaml",
-              "RelativeToolTip": "PetAdoption.Mobile\\Pages\\LoginRegistrationPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-08T14:01:12.438Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "PetAdoption.Mobile\\MainPage.xaml.cs",
-              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\MainPage.xaml.cs",
-              "RelativeToolTip": "PetAdoption.Mobile\\MainPage.xaml.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAhwBIAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T12:14:36.489Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Colors.xaml",
-              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\Resources\\Styles\\Colors.xaml",
-              "RelativeDocumentMoniker": "PetAdoption.Mobile\\Resources\\Styles\\Colors.xaml",
-              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\Resources\\Styles\\Colors.xaml",
-              "RelativeToolTip": "PetAdoption.Mobile\\Resources\\Styles\\Colors.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-08T12:02:14.428Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AboutAssets.txt",
-              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\Resources\\Raw\\AboutAssets.txt",
-              "RelativeDocumentMoniker": "PetAdoption.Mobile\\Resources\\Raw\\AboutAssets.txt",
-              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\Resources\\Raw\\AboutAssets.txt",
-              "RelativeToolTip": "PetAdoption.Mobile\\Resources\\Raw\\AboutAssets.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-05-08T12:02:03.459Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "splash.svg",
-              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\Resources\\Splash\\splash.svg",
-              "RelativeDocumentMoniker": "PetAdoption.Mobile\\Resources\\Splash\\splash.svg",
-              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\Resources\\Splash\\splash.svg",
-              "RelativeToolTip": "PetAdoption.Mobile\\Resources\\Splash\\splash.svg",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQKSURBVDhPrVRbTCNVGP5OOzO9TKEWSrGUttpdpV2ua7ioaDa7ullcdVe8rHFNjPFBY4hGY0wIJprw5ItmCdEXL/FRE4MQsw9LiCthIcFFxA3hFiEsLQUKpaW03XZmOuOZaQsY9W2/5J/zz3/55j///OfgrkJRFFJQD9DX13elrq7uXVWnfk2KugpZlpHJZJBKpYa6u7u7gsFgWHP8HyjhHE2Sc7ncf4okSfLMzIw8NTUl9/f3/xgIBGoKqRr0hfUAHR0dXW1tbXaZFiQJccjpWyDJbyBsfQ9x46oW81dIRHNLG0wmk4/juOr19fVbUQrV9w9CrvVl4m9s7VpIG\u002BxL6\u002BMolb6EaesrSOFhgNRAVtyQIhMIbgPeB1ths9kYs9l8vKyszD0/P39jnyJPSAj4hy7YPE\u002B/\u002BUmJ0/NkS4DlzlRegXXzGmZWmvBT4j0sGy6jvvE85O05JEUeN6ZXMT09jUQioafEgdHR0R/i8XiYUfmMdees3ovvfPhEc/VbL9Qvm5vljxBdTGM81YMl33MICiZMLG8iJa7iRUct/I3HUA0HBEGAxWLB7OysVpcKnfpwdLzd3haoePVS7WRpS/oDsjeTwTrpRbqiE2wK4EUJnvuqcHM7h7HY/SAlHtjt5XA6nbBardDr9QdToBF6nZbOZ/1z5Q3i52RnSoS54TvUP9yJSyedeKXBjuTGNmycAYQ3YSrKYiejpVFQkiOjpULb8omK\u002BOOPWL81JVeM\u002BEL8GKFfWYjSn/Qn0GDQucsxKGd0YDkWK9tZxPYFVJUaVS7a/8MZVcFUORnu9YZr1ezaMrmu\u002B1ThW84Sn0IrKATlSRWIdwTaMxFZSYKk2jS36skTFkmZ0ILnYmzlZ8Nk8g1lzn0u99vEor6p0kwUeiLUIJVQTSR0MF202ka3BQ4Lp9nydHnCIhglEX5p67Yrez13GmJKYXgTq2v32clJFw\u002BrkUEiI2JyNYa1WFrNhNtmhoXaDzkOyVQwmVCmPZYy/DK\u002ByZzwMHFvpc9FhjfSGF7agkK3yHAMcpZyxHJm7EZ28ZSOgKVShFb/kQp10h4xne/JXg5v7ny2OLcSvb2xrwh8CeicgBx/AFmXFxF6h0QiUfiMEp6pqwSnL/7lf0Pf8xocp\u002B6N\u002BW6OL4x5nayYjIv\u002BRFLmQ5E9RHfiuBPdBbu/h9p7GLx/\u002BhjKeNo/erK02mhlhOpra2sYHBz8mp6asJ7O62R4E2cC3NYpV2Rs1lndaD776GN\u002BB5tDjZVBaxWPC7UOPN9UBSOrTVl\u002Bn4VdE52OEgYxNDSkEeatR9Db2zumXl\u002BiKBZEkEUhL/SoFSR7sKoxIyMjstvtblHzC588BG3w7wMDA\u002B0FXRP1Ui02vmgrigpa2R902dVe7i6AvwHcTSP/8z9AyQAAAABJRU5ErkJggg==",
-              "WhenOpened": "2024-05-08T12:01:46.485Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OnboardingPage.xaml.cs",
-              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\Pages\\OnboardingPage.xaml.cs",
-              "RelativeDocumentMoniker": "PetAdoption.Mobile\\Pages\\OnboardingPage.xaml.cs",
-              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\Pages\\OnboardingPage.xaml.cs",
-              "RelativeToolTip": "PetAdoption.Mobile\\Pages\\OnboardingPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAACAAAA",
+              "Title": "AppConstants.cs",
+              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Shared\\AppConstants.cs",
+              "RelativeDocumentMoniker": "PetAdoption.Shared\\AppConstants.cs",
+              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Shared\\AppConstants.cs",
+              "RelativeToolTip": "PetAdoption.Shared\\AppConstants.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T11:55:15.848Z",
+              "WhenOpened": "2024-05-09T09:28:37.06Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\MainPage.xaml",
-              "RelativeDocumentMoniker": "PetAdoption.Mobile\\MainPage.xaml",
-              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\MainPage.xaml",
-              "RelativeToolTip": "PetAdoption.Mobile\\MainPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-08T11:42:33.756Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "App.xaml",
-              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\App.xaml",
-              "RelativeDocumentMoniker": "PetAdoption.Mobile\\App.xaml",
-              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\App.xaml",
-              "RelativeToolTip": "PetAdoption.Mobile\\App.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-08T11:42:03.593Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AppShell.xaml",
-              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\AppShell.xaml",
-              "RelativeDocumentMoniker": "PetAdoption.Mobile\\AppShell.xaml",
-              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\AppShell.xaml",
-              "RelativeToolTip": "PetAdoption.Mobile\\AppShell.xaml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAcwBwAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-08T11:42:00.326Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HomePage.xaml",
-              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\Pages\\HomePage.xaml",
-              "RelativeDocumentMoniker": "PetAdoption.Mobile\\Pages\\HomePage.xaml",
-              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\Pages\\HomePage.xaml",
-              "RelativeToolTip": "PetAdoption.Mobile\\Pages\\HomePage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-08T13:58:26.66Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "OnboardingPage.xaml",
-              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\Pages\\OnboardingPage.xaml",
-              "RelativeDocumentMoniker": "PetAdoption.Mobile\\Pages\\OnboardingPage.xaml",
-              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\Pages\\OnboardingPage.xaml",
-              "RelativeToolTip": "PetAdoption.Mobile\\Pages\\OnboardingPage.xaml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAADAAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-08T12:15:50.359Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LoginRegistrationPage.xaml.cs",
-              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\Pages\\LoginRegistrationPage.xaml.cs",
-              "RelativeDocumentMoniker": "PetAdoption.Mobile\\Pages\\LoginRegistrationPage.xaml.cs",
-              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\Pages\\LoginRegistrationPage.xaml.cs",
-              "RelativeToolTip": "PetAdoption.Mobile\\Pages\\LoginRegistrationPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T13:15:53.738Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AppShell.xaml.cs",
-              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\AppShell.xaml.cs",
-              "RelativeDocumentMoniker": "PetAdoption.Mobile\\AppShell.xaml.cs",
-              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\AppShell.xaml.cs",
-              "RelativeToolTip": "PetAdoption.Mobile\\AppShell.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T13:15:04.506Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Styles.xaml",
-              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\Resources\\Styles\\Styles.xaml",
-              "RelativeDocumentMoniker": "PetAdoption.Mobile\\Resources\\Styles\\Styles.xaml",
-              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\Resources\\Styles\\Styles.xaml",
-              "RelativeToolTip": "PetAdoption.Mobile\\Resources\\Styles\\Styles.xaml",
-              "ViewState": "AQIAAIEBAAAAAAAAAAAhwJIBAAB8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-08T12:02:16.849Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "MauiProgram.cs",
-              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\MauiProgram.cs",
-              "RelativeDocumentMoniker": "PetAdoption.Mobile\\MauiProgram.cs",
-              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\MauiProgram.cs",
-              "RelativeToolTip": "PetAdoption.Mobile\\MauiProgram.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T11:40:12.678Z"
             }
           ]
         }

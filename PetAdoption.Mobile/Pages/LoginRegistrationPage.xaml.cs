@@ -2,8 +2,14 @@ namespace PetAdoption.Mobile.Pages;
 
 public partial class LoginRegistrationPage : ContentPage
 {
-	public LoginRegistrationPage()
+    private readonly LoginRegisterViewModel _viewModel;
+
+    public LoginRegistrationPage(LoginRegisterViewModel viewModel)
 	{
 		InitializeComponent();
-	}
+        _viewModel = viewModel;
+        BindingContext = _viewModel;
+    }
+
+
 }

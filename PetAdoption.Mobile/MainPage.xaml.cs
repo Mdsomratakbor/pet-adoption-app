@@ -18,7 +18,7 @@ namespace PetAdoption.Mobile
 
             if (Preferences.Default.ContainsKey(UIConstants.OnboardingShwon))
             {
-                await Shell.Current.GoToAsync($"//{nameof(OnboardingPage)}");
+                await Shell.Current.GoToAsync($"//{nameof(LoginRegistrationPage)}");
             }
             else
             {

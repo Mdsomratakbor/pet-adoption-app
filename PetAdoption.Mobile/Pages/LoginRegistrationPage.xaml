@@ -2,11 +2,124 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PetAdoption.Mobile.Pages.LoginRegistrationPage"
-             Title="LoginRegistrationPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Login Registration Page!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             xmlns:vm ="clr-namespace:PetAdoption.Mobile.ViewModels"
+             xmlns:models="clr-namespace:PetAdoption.Mobile.Models"
+             Title="LoginRegistrationPage"
+             x:DataType="vm:LoginRegisterViewModel"
+             Background="{StaticResource BgColor}">
+    <Grid RowDefinitions="2*, 3*">
+        <Border Grid.Row="0"
+                StrokeShape="RoundRectangle 150"
+                HeightRequest="250"
+                WidthRequest="250"
+                Stroke="{StaticResource Primary}"
+                StrokeThickness="10">
+            <Image Source="img_21.jpg" 
+                   Aspect="AspectFill"
+                   HeightRequest="250"
+                   WidthRequest="250"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"/>
+            <Border.Shadow>
+                <Shadow Brush="{StaticResource Primary}" Radius="250"></Shadow>
+            </Border.Shadow>
+            
+        </Border>
+
+        <ScrollView Grid.Row="1"
+                    Padding="15">
+            <VerticalStackLayout Spacing="30">
+                <Grid ColumnDefinitions="*, Auto">
+                    <Label Grid.Column="0" Text="Login"
+                           FontSize="40"
+                           FontAttributes="Bold"
+                           LineHeight="1.2">
+                        <Label.Triggers>
+                            <DataTrigger TargetType="Label"
+                                         Binding="{Binding IsRegistrationMode}"
+                                         Value="True">
+                                <Setter Property="Text" Value="Register"/>
+                            </DataTrigger>
+                        </Label.Triggers>
+                    </Label>
+                    <Label Grid.Column="1" Text="Switch to Register"
+                           VerticalOptions="Center"
+                           HorizontalOptions="End"
+                           Background="White"
+                           FontAttributes="Bold"
+                           TextDecorations="Underline">
+                        <Label.Triggers>
+                            <DataTrigger TargetType="Label"
+                                         Binding="{Binding IsRegistrationMode}"
+                                         Value="True">
+                                <Setter Property="Text" Value="Switch to Login"/>
+                            </DataTrigger>
+                        </Label.Triggers>
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ToggleModeCommand}"></TapGestureRecognizer>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Grid>
+
+                <VerticalStackLayout Spacing="10">
+                    
+                    <Entry Placeholder="Enter name"
+                           PlaceholderColor="{StaticResource Primary}" 
+                           IsVisible="{Binding IsRegistrationMode}"
+                           Text="{Binding Model.Name}"/>
+                    
+                    <Entry Placeholder="Enter email"
+                           PlaceholderColor="{StaticResource Primary}"
+                           Keyboard="Email"
+                           Text="{Binding Model.Email}"/>
+                    <Entry Placeholder="Enter password"
+                           IsPassword="True"
+                           PlaceholderColor="{StaticResource Primary}"
+                           Text="{Binding Model.Password}"/>
+
+                    <Button 
+                            Command="{Binding SubmitCommand}"
+                            Text="Login" 
+                            Style="{StaticResource btnPrimary}">
+                        <Button.Triggers>
+                            <DataTrigger TargetType="Button"
+                                          Binding="{Binding IsRegistrationMode}"
+                                          Value="True">
+                                          <Setter Property="Text" Value="Register"/>
+                            </DataTrigger>
+                        </Button.Triggers>
+                    </Button>
+                    
+
+                </VerticalStackLayout>
+                <Grid ColumnDefinitions="*, Auto, *" 
+                      ColumnSpacing="5">
+                    <BoxView Grid.Column="0" 
+                             HeightRequest="1"
+                             Color="{StaticResource Primary}"/>
+                    <Button Grid.Column="1"
+                            Text="Skip for now"
+                            HorizontalOptions="Center"
+                            Padding="25, 5"
+                            HeightRequest="30"
+                            Command="{Binding SkipForNowCommand}">
+                        
+                    </Button>
+                    <BoxView Grid.Column="2" 
+                             HeightRequest="1"
+                             Color="{StaticResource Primary}"/>
+
+
+                </Grid>
+            </VerticalStackLayout>
+            
+        </ScrollView>
+
+        <ActivityIndicator VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           IsRunning="{Binding IsBusy}"
+                           Color="{StaticResource Primary}"
+                           HeightRequest="30"
+                           WidthRequest="30"/>
+    </Grid>
 </ContentPage>
