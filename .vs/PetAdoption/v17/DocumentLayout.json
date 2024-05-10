@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|d:\\personalproject\\mobileapplications\\petadoption\\petadoption.mobile\\services\\iauthapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|solutionrelative:petadoption.mobile\\services\\iauthapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8527A61-F493-4931-A22D-C71D2E76FFC7}|PetAdoption.Api\\PetAdoption.Api.csproj|d:\\personalproject\\mobileapplications\\petadoption\\petadoption.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8527A61-F493-4931-A22D-C71D2E76FFC7}|PetAdoption.Api\\PetAdoption.Api.csproj|solutionrelative:petadoption.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|d:\\personalproject\\mobileapplications\\petadoption\\petadoption.mobile\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}|PetAdoption.Mobile\\PetAdoption.Mobile.csproj|solutionrelative:petadoption.mobile\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}|PetAdoption.Shared\\PetAdoption.Shared.csproj|d:\\personalproject\\mobileapplications\\petadoption\\petadoption.shared\\appconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}|PetAdoption.Shared\\PetAdoption.Shared.csproj|solutionrelative:petadoption.shared\\appconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,7 +42,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "PetAdoption.Api\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "PetAdoption.Api\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T02:14:44.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "IAuthApi.cs",
+              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\Services\\IAuthApi.cs",
+              "RelativeDocumentMoniker": "PetAdoption.Mobile\\Services\\IAuthApi.cs",
+              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\Services\\IAuthApi.cs",
+              "RelativeToolTip": "PetAdoption.Mobile\\Services\\IAuthApi.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T02:14:24.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "PetAdoption.Mobile\\MauiProgram.cs",
+              "ToolTip": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Mobile\\MauiProgram.cs",
+              "RelativeToolTip": "PetAdoption.Mobile\\MauiProgram.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAABUAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T02:03:46.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "AppConstants.cs",
               "DocumentMoniker": "D:\\PersonalProject\\MobileApplications\\PetAdoption\\PetAdoption.Shared\\AppConstants.cs",
               "RelativeDocumentMoniker": "PetAdoption.Shared\\AppConstants.cs",

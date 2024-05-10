@@ -17,7 +17,7 @@ namespace PetAdoption.Api.Services
             _context = context;
         }
 
-        public async Task<ApiResponseDto> ToggleFavoritesAsync(int userId, int petId)
+        public async Task<ApiResponse> ToggleFavoritesAsync(int userId, int petId)
         {
             try
             {
@@ -37,11 +37,11 @@ namespace PetAdoption.Api.Services
                 }
 
                 await _context.SaveChangesAsync();
-                return ApiResponseDto.Success();
+                return ApiResponse.Success();
             }
             catch (Exception ex)
             {
-                return ApiResponseDto.Fail(ex.Message);
+                return ApiResponse.Fail(ex.Message);
             }
         }
 
@@ -65,7 +65,7 @@ namespace PetAdoption.Api.Services
             return ApiResponseDto<PetListDto[]>.Success(pets);
         }
 
-        public async Task<ApiResponseDto> AdoptPetAsync(int userId, int petId)
+        public async Task<ApiResponse> AdoptPetAsync(int userId, int petId)
         {
             try
             {
@@ -75,12 +75,12 @@ namespace PetAdoption.Api.Services
 
                 if (pet is null)
                 {
-                    return ApiResponseDto.Fail("Invalid Request");
+                    return ApiResponse.Fail("Invalid Request");
                 }
 
                 if (pet.AdoptionStatus == Shared.Enumerations.AdoptionStatus.Adopted)
                 {
-                    return ApiResponseDto.Fail($"{pet.Name} is already adopted");
+                    return ApiResponse.Fail($"{pet.Name} is already adopted");
                 }
 
                 pet.AdoptionStatus = Shared.Enumerations.AdoptionStatus.Adopted;
@@ -90,11 +90,11 @@ namespace PetAdoption.Api.Services
                     PetId = petId,
                 };
                 await _context.SaveChangesAsync();
-                return ApiResponseDto.Success();
+                return ApiResponse.Success();
             }
             catch (Exception ex)
             {
-                return ApiResponseDto.Fail(ex.Message);
+                return ApiResponse.Fail(ex.Message);
             }
             finally
             {

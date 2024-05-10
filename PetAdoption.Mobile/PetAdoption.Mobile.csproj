@@ -78,7 +78,10 @@
 
 	<ItemGroup>
 	  <Folder Include="Controls\" />
-	  <Folder Include="Services\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\PetAdoption.Shared\PetAdoption.Shared.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

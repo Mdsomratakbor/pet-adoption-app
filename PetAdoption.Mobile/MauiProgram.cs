@@ -21,7 +21,7 @@ namespace PetAdoption.Mobile
     		builder.Logging.AddDebug();
 #endif
             RegisterAppDependencies(builder.Services);
-
+            ConfigureRefit(builder.Services);
             return builder.Build();
         }
 
@@ -29,6 +29,11 @@ namespace PetAdoption.Mobile
         {
             services.AddTransient<LoginRegisterViewModel>()
                 .AddTransient<LoginRegistrationPage>();
+        }
+
+        static void ConfigureRefit(IServiceCollection services)
+        {
+
         }
     }
 }
