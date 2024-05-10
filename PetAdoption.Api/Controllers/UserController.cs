@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PetAdoption.Api.Services.Interfaces;
 using PetAdoption.Shared.Dtos;
@@ -8,6 +9,7 @@ namespace PetAdoption.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class UserController : ControllerBase
     {
         private readonly IUserPetService _userPetService;

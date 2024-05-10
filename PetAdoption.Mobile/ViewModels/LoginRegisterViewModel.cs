@@ -3,6 +3,11 @@
     [QueryProperty(nameof(IsFirstTime), nameof(IsFirstTime))]
     public partial class LoginRegisterViewModel: BaseViewModel
     {
+       
+        public LoginRegisterViewModel(AuthService authService) {
+            this.authService = authService;
+        }
+
         [ObservableProperty]
         private bool _isRegistrationMode;
 
@@ -12,7 +17,8 @@
 
         [ObservableProperty]
         private bool _isFirstTime;
-       
+        private readonly AuthService authService;
+
         partial void OnIsFirstTimeChanging(bool value)
         {
 
@@ -39,8 +45,12 @@
             }
 
             IsBusy = true;
-            await Task.Delay(1000);
-            await SkipForNow();
+           var status =  await this.authService.LoginRegisterAsync(Model);
+            if (status)
+            {
+                await SkipForNow();
+            }
+            IsBusy = false;
         }
 
 

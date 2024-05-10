@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
+using PetAdoption.Shared;
 
 namespace PetAdoption.Mobile
 {
@@ -18,7 +19,7 @@ namespace PetAdoption.Mobile
                 .UseMauiCommunityToolkit();
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
             RegisterAppDependencies(builder.Services);
             ConfigureRefit(builder.Services);
@@ -29,11 +30,32 @@ namespace PetAdoption.Mobile
         {
             services.AddTransient<LoginRegisterViewModel>()
                 .AddTransient<LoginRegistrationPage>();
+
+            services.AddTransient<AuthService>();
+
+            services.AddSingleton<CommonService>();
         }
 
         static void ConfigureRefit(IServiceCollection services)
         {
+            services.AddRefitClient<IAuthApi>()
+                .ConfigureHttpClient(SetHttpClient);
 
+            services.AddRefitClient<IPetsApi>()
+               .ConfigureHttpClient(SetHttpClient);
+
+            services.AddRefitClient<IuserApi>(sp =>
+            {
+                var commonService = sp.GetService<CommonService>();
+                return new()
+                {
+                    AuthorizationHeaderValueGetter = (_, __) => Task.FromResult(commonService?.Token ?? string.Empty)
+                };
+            })
+              .ConfigureHttpClient(SetHttpClient);
+
+            static void SetHttpClient(HttpClient httpClient) =>
+                httpClient.BaseAddress = new Uri(AppConstants.BaseApiUrl);
         }
     }
 }

@@ -24,7 +24,7 @@ namespace PetAdoption.Api.Controllers
             await _petService.GetNewlyAddedPetsAsync(count);
 
 
-        [HttpGet("pet/{petId:int}")]
+        [HttpGet("{petId:int}")]
         public async Task<ApiResponseDto<PetDetailDto>> GetPetsDetailsAsync(int petId) =>
             await _petService.GetPetsDetailsAsync(petId);
 
