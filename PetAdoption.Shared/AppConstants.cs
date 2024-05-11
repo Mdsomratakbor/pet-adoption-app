@@ -8,6 +8,6 @@ namespace PetAdoption.Shared
 {
     public static class AppConstants
     {
-        public const string BaseApiUrl = "https://kd31kmdz-7063.asse.devtunnels.ms/api/";
+        public const string BaseApiUrl = "https://kd31kmdz-7063.asse.devtunnels.ms";
     }
 }

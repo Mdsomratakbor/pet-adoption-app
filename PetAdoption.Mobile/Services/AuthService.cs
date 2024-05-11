@@ -18,25 +18,26 @@ namespace PetAdoption.Mobile.Services
 
         public async Task<bool> LoginRegisterAsync(LogingRegisterModel model)
         {
-            ApiResponseDto<AuthResponseDto> apiResponse;
-            if (model.isNewUser)
+            try
             {
-                apiResponse = await _authApi.RegisterAsync(new RegisterRequestDto()
+                ApiResponseDto<AuthResponseDto> apiResponse;
+                if (model.isNewUser)
                 {
-                    Name = model.Name,
-                    Email = model.Email,
-                    Password = model.Password
-                });
-            }
-            else
-            {
-
-                apiResponse = await _authApi.LoginAsync(new LoginRequestDto()
+                    apiResponse = await _authApi.RegisterAsync(new RegisterRequestDto()
+                    {
+                        Name = model.Name,
+                        Email = model.Email,
+                        Password = model.Password
+                    });
+                }
+                else
                 {
-                    Email = model.Email,
-                    Password = model.Password
-                });
-
+                    apiResponse = await _authApi.LoginAsync(new LoginRequestDto()
+                    {
+                        Email = model.Email,
+                        Password = model.Password
+                    });
+                }
                 if (!apiResponse.IsSuccess)
                 {
                     await App.Current.MainPage.DisplayAlert("Error", apiResponse.Message, "Ok");
@@ -45,8 +46,14 @@ namespace PetAdoption.Mobile.Services
                 var user = new LoggedInUser(apiResponse.Data.UserId, apiResponse.Data.Name, apiResponse.Data.Token);
                 SetUesr(user);
                 _commonService.SetToken(apiResponse.Data.Token);
+                return true;
             }
-            return true;
+            catch (Exception ex)
+            {
+                await App.Current.MainPage.DisplayAlert("Error", ex.Message, "Ok");
+                return false;
+            }
+
         }
 
         private void SetUesr(LoggedInUser user) =>
