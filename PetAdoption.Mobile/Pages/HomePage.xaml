@@ -23,12 +23,19 @@
                         </Image>
 
                     </Border>
+                    
                     <Label Text="{Binding Name}"
                  HorizontalOptions="Center"
                  FontSize="16"
                  TextColor="{StaticResource Primary}">
 
                     </Label>
+                    <VerticalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding Source={x:RelativeSource AncestorType={x:Type vm:HomeViewModel}}, Path=GoToDetailsPageCommand}"
+                      CommandParameter="{Binding Id}">
+
+                        </TapGestureRecognizer>
+                    </VerticalStackLayout.GestureRecognizers>
                 </VerticalStackLayout>
             </DataTemplate>
         </ResourceDictionary>
@@ -49,6 +56,12 @@
                         <DataTemplate x:DataType="dtos:PetListDto">
                             <Grid RowDefinitions="*, Auto, Auto"
                                   RowSpacing="8">
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Source={x:RelativeSource AncestorType={x:Type vm:HomeViewModel}}, Path= GoToDetailsPageCommand}"
+                                                          CommandParameter="{Binding Id}">
+                                        
+                                    </TapGestureRecognizer>
+                                </Grid.GestureRecognizers>
                                 <Border 
                                         Grid.Row="0"
                                         HeightRequest="250"

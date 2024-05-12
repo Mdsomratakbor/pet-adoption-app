@@ -49,5 +49,11 @@ namespace PetAdoption.Mobile.ViewModels
                 IsBusy = false;
             }
         }
+
+        [RelayCommand]
+        private async Task GoToDetailsPage(int petId)
+        {
+            await GoToAsync($"{nameof(DetailsPage)}?{nameof(DetailsViewModel.PetId)}={petId}");
+        }
     }
 }

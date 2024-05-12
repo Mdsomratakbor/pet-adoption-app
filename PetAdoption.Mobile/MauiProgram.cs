@@ -34,6 +34,8 @@ namespace PetAdoption.Mobile
             services.AddSingleton<HomeViewModel>()
                 .AddSingleton<HomePage>();
 
+            services.AddTransientWithShellRoute<DetailsPage, DetailsViewModel>(nameof(DetailsPage));
+
             services.AddTransient<AuthService>();
 
             services.AddSingleton<CommonService>();
