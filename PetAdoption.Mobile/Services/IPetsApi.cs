@@ -12,20 +12,20 @@ namespace PetAdoption.Mobile.Services
         public Task<ApiResponseDto<PetListDto[]>> GetAllPetsAsync();
 
 
-        [Get("/api/pets/new/{count:int}")]
+        [Get("/api/pets/new/{count}")]
         public Task<ApiResponseDto<PetListDto[]>> GetNewlyAddedPetsAsync(int count);
 
 
 
-        [Get("/api/pets/{petId:int}")]
+        [Get("/api/pets/{petId}")]
         public Task<ApiResponseDto<PetDetailDto>> GetPetsDetailsAsync(int petId);
 
 
 
-        [Get("/api/pets/popular/{count:int}")]
+        [Get("/api/pets/popular/{count}")]
         public Task<ApiResponseDto<PetListDto[]>> GetPopularPetsAsync(int count);
 
-        [Get("/api/pets/random/{count:int}")]
+        [Get("/api/pets/random/{count}")]
         public Task<ApiResponseDto<PetListDto[]>> GetRandomPetsAsync(int count);
 
     }

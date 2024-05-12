@@ -31,6 +31,9 @@ namespace PetAdoption.Mobile
             services.AddTransient<LoginRegisterViewModel>()
                 .AddTransient<LoginRegistrationPage>();
 
+            services.AddSingleton<HomeViewModel>()
+                .AddSingleton<HomePage>();
+
             services.AddTransient<AuthService>();
 
             services.AddSingleton<CommonService>();
