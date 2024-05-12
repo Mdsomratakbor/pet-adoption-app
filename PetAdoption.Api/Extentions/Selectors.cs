@@ -1,6 +1,7 @@
 ﻿using PetAdoption.Api.Data.Entities;
 using PetAdoption.Shared.Dtos;
 using System.Linq.Expressions;
+using PetAdoption.Shared;
 
 namespace PetAdoption.Api.Extentions
 {
@@ -12,7 +13,7 @@ namespace PetAdoption.Api.Extentions
             Name = p.Name,
             Price = p.Price,
             Breed  = p.Breed,
-            Image = p.Image
+            Image =  $"{AppConstants.BaseApiUrl}/pets/images/{p.Image}" 
         };
     }
 }

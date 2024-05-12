@@ -21,8 +21,4 @@
     <ProjectReference Include="..\PetAdoption.Shared\PetAdoption.Shared.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\pets\images\" />
-  </ItemGroup>
-
 </Project>

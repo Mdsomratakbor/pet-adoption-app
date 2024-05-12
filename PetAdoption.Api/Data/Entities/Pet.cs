@@ -10,8 +10,9 @@ namespace PetAdoption.Api.Data.Entities
         public int Id { get; set; }
         [Required, MaxLength(25)]
         public string Name { get; set; }
-        // [Required, MaxLength(180)]
-        public string? Image { get;set; }
+
+         [Required, MaxLength(180)]
+        public string Image { get;set; }
         [MaxLength(50)]
         public string? Breed { get; set; }
         [Required]
