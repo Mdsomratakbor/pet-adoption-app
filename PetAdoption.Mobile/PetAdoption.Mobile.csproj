@@ -60,7 +60,9 @@
 	  <None Remove="Resources\Fonts\Ubuntu-Bold.ttf" />
 	  <None Remove="Resources\Fonts\Ubuntu-Regular.ttf" />
 	  <None Remove="Resources\Images\breed.svg" />
+	  <None Remove="Resources\Images\gender.svg" />
 	  <None Remove="Resources\Images\heart.svg" />
+	  <None Remove="Resources\Images\heart_filled.svg" />
 	  <None Remove="Resources\Images\home.svg" />
 	  <None Remove="Resources\Images\img_21.jpg" />
 	  <None Remove="Resources\Images\img_22.jpg" />

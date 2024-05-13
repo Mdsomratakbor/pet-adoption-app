@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,14 +11,19 @@ namespace PetAdoption.Mobile.ViewModels
     public partial class DetailsViewModel: BaseViewModel
     {
         private readonly IPetsApi _petsApi;
-        public DetailsViewModel(IPetsApi petsApi) {
+        private readonly AuthService _authService;
+        private readonly IuserApi _userApi;
+
+        public DetailsViewModel(IPetsApi petsApi, AuthService authService, IuserApi userApi) {
             _petsApi = petsApi;
+            _authService = authService;
+            _userApi = userApi;
         }
         [ObservableProperty]
         private int _petId;
 
         [ObservableProperty]
-        private PetDetailDto _petDetail = new PetDetailDto();
+        private Pet _petDetail = new();
 
 
         async partial  void OnPetIdChanging(int petId)
@@ -28,7 +34,21 @@ namespace PetAdoption.Mobile.ViewModels
                 var apiResponse = await _petsApi.GetPetsDetailsAsync(petId);
                 if (apiResponse.IsSuccess)
                 {
-                    PetDetail = apiResponse.Data;
+                   var petDto = apiResponse.Data;
+                    PetDetail = new()
+                    {
+                        AdoptionStatus = petDto.AdoptionStatus,
+                        Age = petDto.Age,
+                        Breed = petDto.Breed,
+                        Description = petDto.Description,
+                        GenderDisplay = petDto.GenderDisplay,
+                        GenderImage = petDto.GenderImage,
+                        Id= petDto.Id,
+                        Image = petDto.Image,
+                        IsFavorite = petDto.IsFavorite,
+                        Name = petDto.Name,
+                        Price = petDto.Price
+                    };
                 }
                 else
                 {
@@ -48,5 +68,28 @@ namespace PetAdoption.Mobile.ViewModels
 
         [RelayCommand]
         private async Task GoBack() => await GoToAsync("..");
+
+        [RelayCommand]
+        private async Task ToggleFavorite()
+        {
+            if (!_authService.IsLoggedIn)
+            {
+                await ShowToastAsync("You need to be logged in to mark this pet as favorite");
+                return;
+            }
+            PetDetail.IsFavorite = !PetDetail.IsFavorite;
+            try
+            {
+                IsBusy = true;
+                await _userApi.ToggleFavoritesAsync(PetId);
+                IsBusy = false;
+            }
+            catch(Exception ex)
+            {
+                IsBusy = false;
+                PetDetail.IsFavorite = !PetDetail.IsFavorite;
+                await ShowAlertAsync("Error in toggling favorite status", ex.Message);
+            }
+        }
     }
 }

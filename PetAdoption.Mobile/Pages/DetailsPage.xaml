@@ -32,8 +32,18 @@
                    VerticalOptions="Center"
                    />
             <Border Style="{StaticResource iconBtnContainer}">
-                <Image Source="heart"/>
-
+                <Image Source="heart">
+                    <Image.Triggers>
+                        <DataTrigger TargetType="Image"
+                                     Binding="{Binding PetDetail.IsFavorite}"
+                                     Value="True">
+                            <Setter Property="Source" Value="heart_filled"></Setter>
+                        </DataTrigger>
+                    </Image.Triggers>
+                </Image>
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer  Command="{Binding ToggleFavoriteCommand}"/>
+                </Border.GestureRecognizers>
             </Border>
         </FlexLayout>
         <Border Grid.Row="1"
@@ -90,7 +100,7 @@
             <controls:PetFeatControl 
                 Grid.Row="2" 
                 Grid.Column="1" 
-                Icon="{Binding PetDetail.Gender}" 
+                Icon="gender" 
                 Label="Gender" 
                 Value="{Binding PetDetail.GenderDisplay}"/>
             <controls:PetFeatControl 
