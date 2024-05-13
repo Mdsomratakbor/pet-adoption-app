@@ -59,10 +59,12 @@
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\Ubuntu-Bold.ttf" />
 	  <None Remove="Resources\Fonts\Ubuntu-Regular.ttf" />
+	  <None Remove="Resources\Images\breed.svg" />
 	  <None Remove="Resources\Images\heart.svg" />
 	  <None Remove="Resources\Images\home.svg" />
 	  <None Remove="Resources\Images\img_21.jpg" />
 	  <None Remove="Resources\Images\img_22.jpg" />
+	  <None Remove="Resources\Images\left_arrow.svg" />
 	  <None Remove="Resources\Images\list.svg" />
 	  <None Remove="Resources\Images\user.svg" />
 	</ItemGroup>
@@ -77,14 +79,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Controls\" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <ProjectReference Include="..\PetAdoption.Shared\PetAdoption.Shared.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Controls\PetFeatControl.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\AdoptionsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

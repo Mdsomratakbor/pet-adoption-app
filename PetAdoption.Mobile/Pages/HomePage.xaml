@@ -71,7 +71,8 @@
                                     <Image
                                         Source="{Binding Image}" 
                                         HeightRequest="250"
-                                        WidthRequest="250"/>
+                                        WidthRequest="250"
+                                        Aspect="AspectFill"/>
                                 </Border>
                                 <Label  Grid.Row="1"
                                         Text="{Binding Name}"

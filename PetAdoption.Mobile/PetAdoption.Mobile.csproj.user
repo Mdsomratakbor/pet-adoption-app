@@ -8,6 +8,9 @@
     <DefaultDevice>pixel_5_-_api_33</DefaultDevice>
   </PropertyGroup>
   <ItemGroup>
+    <MauiXaml Update="Controls\PetFeatControl.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Pages\AdoptionsPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

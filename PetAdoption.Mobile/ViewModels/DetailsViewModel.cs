@@ -45,5 +45,8 @@ namespace PetAdoption.Mobile.ViewModels
                 IsBusy = false;
             }
         }
+
+        [RelayCommand]
+        private async Task GoBack() => await GoToAsync("..");
     }
 }

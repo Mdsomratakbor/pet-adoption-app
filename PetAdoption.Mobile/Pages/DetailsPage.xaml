@@ -3,24 +3,111 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PetAdoption.Mobile.Pages.DetailsPage"
              xmlns:vm ="clr-namespace:PetAdoption.Mobile.ViewModels"
+             xmlns:controls ="clr-namespace:PetAdoption.Mobile.Controls"
              xmlns:models ="clr-namespace:PetAdoption.Mobile.Models"
              xmlns:dtos ="clr-namespace:PetAdoption.Shared.Dtos;assembly=PetAdoption.Shared"
              Shell.NavBarIsVisible="False"
              x:DataType="vm:DetailsViewModel"
              Shell.PresentationMode="ModalAnimated"
              Background="{StaticResource BgColor}">
+
     <Grid
         RowDefinitions="Auto, *, *, Auto"
-        RowSpacing="20">
-        <FlexLayout Grid.Row="0">
-            <Border Background="White"
-                    HeightRequest="30"
-                    WidthRequest="30"
-                    StrokeShape="RoundRectangle 40,0,0,40">
-                
+        RowSpacing="20"
+        Padding="10, 20, 10, 10">
+        <FlexLayout Grid.Row="0"
+                    JustifyContent="SpaceBetween"
+                    >
+            <Border Style="{StaticResource iconBtnContainer}">
+                <Image Source="left_arrow"/>
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding GoBackCommand}">
+                        
+                    </TapGestureRecognizer>
+                </Border.GestureRecognizers>
             </Border>
-            
+            <Label Text="Pet Details"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   VerticalOptions="Center"
+                   />
+            <Border Style="{StaticResource iconBtnContainer}">
+                <Image Source="heart"/>
+
+            </Border>
         </FlexLayout>
-        
+        <Border Grid.Row="1"
+                HeightRequest="300"
+                WidthRequest="300"
+                StrokeShape="RoundRectangle 150"
+                StrokeThickness="0"
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+            <Image Source="{Binding PetDetail.Image}"
+                   HeightRequest="300"
+                   WidthRequest="300"
+                   Aspect="AspectFill"/>
+
+        </Border>
+        <Grid Grid.Row="2"
+              RowDefinitions="Auto, Auto, Auto"
+              ColumnDefinitions="*, *, *"
+              RowSpacing="25">
+            <Label Grid.Row="0"
+                   Grid.ColumnSpan="2"
+                   
+                   Text="{Binding PetDetail.Name}"
+                   FontSize="25"
+                   FontAttributes="Bold"
+                   VerticalOptions="End"/>
+            <Border Grid.Row="0"
+                    Grid.Column="2"
+                    BackgroundColor="White"
+                    StrokeThickness="0"
+                    Padding="5"
+                    VerticalOptions="End">
+                <Label Text="{Binding PetDetail.Price, StringFormat='{0:C}'}"
+                       TextColor="{StaticResource Primary}"
+                       FontSize="25"
+                       FontAttributes="Bold"
+                       HorizontalOptions="End"/>
+
+            </Border>
+
+            <Label Grid.Row="1"
+                   Grid.ColumnSpan="3"
+                   Text="{Binding PetDetail.Description}"
+                   FontSize="16"
+                   LineHeight="1.5">
+
+            </Label>
+            <controls:PetFeatControl 
+                Grid.Row="2" 
+                Grid.Column="0" 
+                Icon="breed" 
+                Label="Breed" 
+                Value="{Binding PetDetail.Breed}"/>
+            <controls:PetFeatControl 
+                Grid.Row="2" 
+                Grid.Column="1" 
+                Icon="{Binding PetDetail.Gender}" 
+                Label="Gender" 
+                Value="{Binding PetDetail.GenderDisplay}"/>
+            <controls:PetFeatControl 
+                Grid.Row="2" 
+                Grid.Column="2" 
+                Icon="calender" 
+                Label="Age" 
+                Value="{Binding PetDetail.Age}"/>
+        </Grid>
+        <Button Text="Adopt Now"
+                Grid.Row="3"
+                
+                Style="{StaticResource btnPrimary}"/>
+        <ActivityIndicator Grid.RowSpan="4"
+                           HorizontalOptions="Center"
+                           IsRunning="{Binding IsBusy}"
+                           VerticalOptions="Center"
+                           Color="{StaticResource Primary}"/>
     </Grid>
 </ContentPage>
