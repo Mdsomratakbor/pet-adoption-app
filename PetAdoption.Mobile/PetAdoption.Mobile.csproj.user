@@ -11,6 +11,9 @@
     <MauiXaml Update="Controls\PetFeatControl.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Controls\ProfileOptionRow.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Pages\AdoptionsPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

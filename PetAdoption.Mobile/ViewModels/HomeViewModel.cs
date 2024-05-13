@@ -1,13 +1,38 @@
 ﻿
+
 namespace PetAdoption.Mobile.ViewModels
 {
     public partial class HomeViewModel: BaseViewModel
     {
         private readonly IPetsApi _petsApi;
-        public HomeViewModel(IPetsApi petsApi)
+        private readonly CommonService _commonService;
+        private readonly AuthService _authService;
+
+        public HomeViewModel(IPetsApi petsApi, CommonService commonService, AuthService authService)
         {
             _petsApi = petsApi;
+            _commonService = commonService;
+            _authService = authService;
+            _commonService.LoginStatusChanged += OnLoginStatusChanged;
+            SetUserInfo();
         }
+
+        private void OnLoginStatusChanged(object? sender, EventArgs e) => SetUserInfo();
+        private void SetUserInfo()
+        {
+
+            if (_authService.IsLoggedIn)
+            {
+                var userInfo = _authService.GetUser();
+                UserName = userInfo.Name;
+
+            }
+            else
+            {
+                UserName = "Stranger";
+            }
+        }
+
         [ObservableProperty]
         private IEnumerable<PetListDto> _newlyAdded = Enumerable.Empty<PetListDto>();
         [ObservableProperty]

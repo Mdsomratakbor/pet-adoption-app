@@ -46,6 +46,7 @@ namespace PetAdoption.Mobile.Services
                 var user = new LoggedInUser(apiResponse.Data.UserId, apiResponse.Data.Name, apiResponse.Data.Token);
                 SetUesr(user);
                 _commonService.SetToken(apiResponse.Data.Token);
+                _commonService.ToggleLoginStatus();
                 return true;
             }
             catch (Exception ex)
@@ -58,10 +59,11 @@ namespace PetAdoption.Mobile.Services
 
         private void SetUesr(LoggedInUser user) =>
              Preferences.Default.Set(UIConstants.UserInfo, user.ToJson());
-        public  void LogoutAsync()
+        public  void Logout()
         {
             _commonService.SetToken(null);
             Preferences.Default.Remove(UIConstants.UserInfo);
+            _commonService.ToggleLoginStatus();
         }
         public LoggedInUser? GetUser()
         {
