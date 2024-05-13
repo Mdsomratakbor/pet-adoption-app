@@ -32,5 +32,11 @@ namespace PetAdoption.Mobile.ViewModels
         protected async Task<bool> ShowConfirmAsync(string title, string message, string okButtonText, string cancelButtonText) =>
           await App.Current.MainPage.DisplayAlert(title, message, okButtonText,cancelButtonText);
 
+        [RelayCommand]
+        private async Task GoToDetailsPage(int petId)
+        {
+            await GoToAsync($"{nameof(DetailsPage)}?{nameof(DetailsViewModel.PetId)}={petId}");
+        }
+
     }
 }
