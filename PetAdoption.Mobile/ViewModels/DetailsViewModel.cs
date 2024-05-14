@@ -1,6 +1,9 @@
-﻿using System;
+﻿
+using PetAdoption.Shared;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Json;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,9 +15,9 @@ namespace PetAdoption.Mobile.ViewModels
     {
         private readonly IPetsApi _petsApi;
         private readonly AuthService _authService;
-        private readonly IuserApi _userApi;
+        private readonly IUserApi _userApi;
 
-        public DetailsViewModel(IPetsApi petsApi, AuthService authService, IuserApi userApi) {
+        public DetailsViewModel(IPetsApi petsApi, AuthService authService, IUserApi userApi) {
             _petsApi = petsApi;
             _authService = authService;
             _userApi = userApi;
@@ -31,7 +34,10 @@ namespace PetAdoption.Mobile.ViewModels
             IsBusy = true;
             try
             {
-                var apiResponse = await _petsApi.GetPetsDetailsAsync(petId);
+                var apiResponse = _authService.IsLoggedIn ?
+                    await _userApi.GetPetsDetailsAsync(petId):
+                    await _petsApi.GetPetsDetailsAsync(petId);
+
                 if (apiResponse.IsSuccess)
                 {
                    var petDto = apiResponse.Data;

@@ -55,12 +55,20 @@ namespace PetAdoption.Mobile
             services.AddRefitClient<IPetsApi>()
                .ConfigureHttpClient(SetHttpClient);
 
-            services.AddRefitClient<IuserApi>(sp =>
+            services.AddRefitClient<IUserApi>(sp =>
             {
+                string token = string.Empty;
                 var commonService = sp.GetService<CommonService>();
+
+                if (commonService.Token == null)
+                {
+                   var authService = sp.GetService<AuthService>();
+                    token = authService.GetUser().Token;
+                    
+                }
                 return new()
                 {
-                    AuthorizationHeaderValueGetter = (_, __) => Task.FromResult(commonService?.Token ?? string.Empty)
+                    AuthorizationHeaderValueGetter = (_, __) => Task.FromResult(commonService?.Token ?? token)
                 };
             })
               .ConfigureHttpClient(SetHttpClient);

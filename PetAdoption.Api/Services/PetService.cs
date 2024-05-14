@@ -38,7 +38,7 @@ namespace PetAdoption.Api.Services
             return ApiResponseDto<PetListDto[]>.Success(pets);
         }
 
-        public async Task<ApiResponseDto<PetDetailDto>> GetPetsDetailsAsync(int petId)
+        public async Task<ApiResponseDto<PetDetailDto>> GetPetsDetailsAsync(int petId, int userId = 0)
         {
             var pet = await _context.Pets.AsTracking().FirstOrDefaultAsync(p => p.Id == petId);
 
@@ -49,7 +49,14 @@ namespace PetAdoption.Api.Services
                 await _context.SaveChangesAsync();
             }
 
-            return ApiResponseDto<PetDetailDto>.Success(pet.MapToPetDetailsDto());
+            var petDto = pet!.MapToPetDetailsDto();
+
+            if (userId > 0)
+            {
+                if (await _context.UserFavorites.AnyAsync(uf => uf.UserId == userId && uf.PetId == petId))
+                    petDto.IsFavorite = true;
+            }
+            return ApiResponseDto<PetDetailDto>.Success(petDto);
         }
     }
 }

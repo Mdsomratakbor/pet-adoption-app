@@ -6,7 +6,7 @@ namespace PetAdoption.Api.Services.Interfaces
     {
         Task<ApiResponseDto<PetListDto[]>> GetAllPetsAsync();
         Task<ApiResponseDto<PetListDto[]>> GetNewlyAddedPetsAsync(int count);
-        Task<ApiResponseDto<PetDetailDto>> GetPetsDetailsAsync(int petId);
+        Task<ApiResponseDto<PetDetailDto>> GetPetsDetailsAsync(int petId, int userId=0);
         Task<ApiResponseDto<PetListDto[]>> GetPopularPetsAsync(int count);
         Task<ApiResponseDto<PetListDto[]>> GetRandomPetsAsync(int count);
     }

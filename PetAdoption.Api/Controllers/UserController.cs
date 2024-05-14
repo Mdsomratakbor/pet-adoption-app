@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using PetAdoption.Api.Services;
 using PetAdoption.Api.Services.Interfaces;
 using PetAdoption.Shared.Dtos;
 using System.Security.Claims;
@@ -13,9 +14,12 @@ namespace PetAdoption.Api.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserPetService _userPetService;
-        public UserController(IUserPetService userPetService)
+        private readonly IPetService _petService;
+
+        public UserController(IUserPetService userPetService, IPetService petService)
         {
             _userPetService = userPetService;
+            _petService = petService;
         }
 
         /// HAKE: THERE HAVE A ISSUE
@@ -35,5 +39,9 @@ namespace PetAdoption.Api.Controllers
         [HttpPost("favorites/{petid:int}")]
         public async Task<ApiResponse> ToggleFavoritesAsync(int petId) =>
             await _userPetService.ToggleFavoritesAsync(userId, petId);
+
+        [HttpGet("view-pet-details/{petId:int}")]
+        public async Task<ApiResponseDto<PetDetailDto>> GetPetsDetailsAsync(int petId) =>
+       await _petService.GetPetsDetailsAsync(petId, userId);
     }
 }

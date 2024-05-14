@@ -39,8 +39,8 @@ namespace PetAdoption.Api.Services
             {
                 claims.AddRange(additionalClaims);
             }
-            var token = new JwtSecurityToken(issuer: _configuration["Jwt: Issuer"],
-                audience: _configuration["Jwt: Audience"], 
+            var token = new JwtSecurityToken(issuer: _configuration["Jwt:Issuer"],
+                audience: _configuration["Jwt:Audience"], 
                 claims:claims, 
                 expires: DateTime.Now.AddMinutes(expireMinutes),
                 signingCredentials: credentials);
