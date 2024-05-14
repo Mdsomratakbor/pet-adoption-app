@@ -25,6 +25,7 @@ namespace PetAdoption.Mobile.ViewModels
             {
                 var userInfo = _authService.GetUser();
                 UserName = userInfo.Name;
+                _commonService.SetToken(userInfo.Token);
 
             }
             else

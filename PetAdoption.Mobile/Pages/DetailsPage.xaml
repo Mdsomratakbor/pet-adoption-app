@@ -33,6 +33,9 @@
                    />
             <Border Style="{StaticResource iconBtnContainer}">
                 <Image Source="heart">
+                    <Image.Shadow>
+                        <Shadow/>
+                    </Image.Shadow>
                     <Image.Triggers>
                         <DataTrigger TargetType="Image"
                                      Binding="{Binding PetDetail.IsFavorite}"
