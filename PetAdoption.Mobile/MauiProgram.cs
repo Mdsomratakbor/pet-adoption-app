@@ -39,6 +39,8 @@ namespace PetAdoption.Mobile
 
             services.AddTransient<ProfileViewModel>()
                 .AddTransient<ProfilePage>();
+            services.AddTransient<FavoritesViewModel>()
+                .AddTransient<FavoritesPage>();
 
             services.AddTransientWithShellRoute<DetailsPage, DetailsViewModel>(nameof(DetailsPage));
 
