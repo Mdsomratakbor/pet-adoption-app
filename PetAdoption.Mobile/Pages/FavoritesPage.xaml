@@ -6,14 +6,17 @@
              xmlns:controls ="clr-namespace:PetAdoption.Mobile.Controls"
              xmlns:models ="clr-namespace:PetAdoption.Mobile.Models"
              xmlns:dtos ="clr-namespace:PetAdoption.Shared.Dtos;assembly=PetAdoption.Shared"
-             Title="FavoritesPage"
+             Title="Favorites Page"
              x:DataType="vm:FavoritesViewModel">
     <Grid>
         <ScrollView Grid.Row="1"
                     Padding="5">
-            <CollectionView ItemsSource="{Binding Pets}">
+            
+            <CollectionView ItemsSource="{Binding Pets}"
+                            ItemsLayout="VerticalGrid, 2">
+
                 <CollectionView.ItemTemplate>
-<DataTemplate x:DataType="models:PetSlim">
+                    <DataTemplate x:DataType="models:PetSlim">
                         <Border
                             StrokeShape="RoundRectangle 50, 50, 0, 0"
                             StrokeThickness="0"
@@ -40,7 +43,7 @@
                                                                   CommandParameter="{Binding Id}"></TapGestureRecognizer>
                                         </Border.GestureRecognizers>
                                     </Border>
-                                    
+
                                 </Grid>
                                 <Label  Text="{Binding Name}"
                                         FontSize="18"
@@ -48,12 +51,11 @@
                                         TextColor="{StaticResource Primary}"
                                         HorizontalOptions="Center"/>
                             </VerticalStackLayout>
-                            
+
                         </Border>
-                       
+
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
-                
             </CollectionView>
             
         </ScrollView>
