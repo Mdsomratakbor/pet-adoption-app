@@ -1,5 +1,7 @@
 ﻿
+using Microsoft.AspNetCore.SignalR.Client;
 using PetAdoption.Shared;
+using PetAdoption.Shared.HubModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,11 +14,13 @@ using System.Threading.Tasks;
 namespace PetAdoption.Mobile.ViewModels
 {
     [QueryProperty(nameof(PetId), nameof(PetId))]
-    public partial class DetailsViewModel : BaseViewModel
+    public partial class DetailsViewModel : BaseViewModel, IAsyncDisposable
     {
         private readonly IPetsApi _petsApi;
         private readonly AuthService _authService;
         private readonly IUserApi _userApi;
+
+        private HubConnection _hubConnection;
 
         public DetailsViewModel(IPetsApi petsApi, AuthService authService, IUserApi userApi)
         {
@@ -36,6 +40,7 @@ namespace PetAdoption.Mobile.ViewModels
             IsBusy = true;
             try
             {
+                await ConfigureSignalRHubConnectionAsync(petId);
                 var apiResponse = _authService.IsLoggedIn ?
                     await _userApi.GetPetsDetailsAsync(petId) :
                     await _petsApi.GetPetsDetailsAsync(petId);
@@ -74,6 +79,47 @@ namespace PetAdoption.Mobile.ViewModels
             }
         }
 
+        private async Task ConfigureSignalRHubConnectionAsync(int currentPetId)
+        {
+            try
+            {
+                var _hubConnection = new HubConnectionBuilder()
+                            .WithUrl(AppConstants.HubFullUrl)
+                            .Build();
+                _hubConnection.On<int>(nameof(IPetHubClient.PetIsBeingViewd), async petId =>
+                {
+                    if (currentPetId == petId)
+                    {
+                        await App.Current.Dispatcher.DispatchAsync(() => ShowToastAsync("Someone else is also viewing this pet"));
+                        ;
+                    }
+                });
+
+                _hubConnection.On<int>(nameof(IPetHubClient.PetAdopted), async petId =>
+                {
+                    if (currentPetId == petId)
+                    {
+                        PetDetail.AdoptionStatus = Shared.Enumerations.AdoptionStatus.Adopted;
+                        await App.Current.Dispatcher.DispatchAsync(() => ShowToastAsync("Someone adopted this pet. You wont be able to adopt this now"));
+                        ;
+                    }
+                });
+                await _hubConnection.StartAsync();
+
+                await _hubConnection.SendAsync(nameof(IPetHubServer.ViewingThisPet), currentPetId);
+
+            }
+            catch
+            {
+                // Eat out this exception
+                // this is not and essential feature for this app
+                // if there is some issue with this signalr connection we skip it
+                // as the app will work fine without signalr as well
+
+                // future i will send this exception any logger server
+            }
+        }
+
         [RelayCommand]
         private async Task GoBack() => await GoToAsync("..");
 
@@ -104,10 +150,10 @@ namespace PetAdoption.Mobile.ViewModels
         [RelayCommand]
         private async Task AdoptNowAsync()
         {
-            if (!_authService.IsLoggedIn && await ShowConfirmAsync("Not Logged In", $"You need to be logged in to adopt a pet {Environment.NewLine} Do you want to go to login page?", "Yes", "No"))
+            if (!_authService.IsLoggedIn)
             {
-
-                await GoToAsync($"//{nameof(LoginRegistrationPage)}");
+                if (await ShowConfirmAsync("Not Logged In", $"You need to be logged in to adopt a pet {Environment.NewLine} Do you want to go to login page?", "Yes", "No"))
+                    await GoToAsync($"//{nameof(LoginRegistrationPage)}");
                 return;
             }
             IsBusy = true;
@@ -117,6 +163,17 @@ namespace PetAdoption.Mobile.ViewModels
                 if (apiResponse.IsSuccess)
                 {
                     PetDetail.AdoptionStatus = Shared.Enumerations.AdoptionStatus.Adopted;
+                    if (_hubConnection is not null)
+                    {
+                        try
+                        {
+                            await _hubConnection.SendAsync(nameof(IPetHubServer.PetAdopted), PetId);
+                        }
+                        catch
+                        {
+
+                        }
+                    }
                     await GoToAsync(nameof(AdoptionSuccessPage));
                 }
                 else
@@ -135,5 +192,24 @@ namespace PetAdoption.Mobile.ViewModels
             }
         }
 
+        public async ValueTask DisposeAsync()
+        {
+            await StopHubConnection();
+        }
+        public async Task StopHubConnection()
+        {
+            if (_hubConnection is not null)
+            {
+                try
+                {
+                    await _hubConnection.SendAsync(nameof(IPetHubServer.ReleaseViewingThisPet), PetId);
+                    await _hubConnection.StopAsync();
+                }
+                catch (Exception ex)
+                {
+                    // skip
+                }
+            }
+        }
     }
 }

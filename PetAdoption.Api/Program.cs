@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using PetAdoption.Api.Data;
+using PetAdoption.Api.Hubs;
 using PetAdoption.Api.Services;
 using PetAdoption.Api.Services.Interfaces;
 using PetAdoption.Api.Utilities;
+using PetAdoption.Shared;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,6 +30,7 @@ builder.Services.AddTransient<IAuthService, AuthService>()
                 .AddTransient<TokenService>()
                 .AddTransient<IPetService,PetService>()
                 .AddTransient<IUserPetService ,UserPetService>();
+builder.Services.AddSignalR();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -43,6 +46,6 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
-
+app.MapHub<PetHub>(AppConstants.HubPattern);
 app.Run();
 

@@ -1,6 +1,7 @@
+
 namespace PetAdoption.Mobile.Pages;
 
-public partial class DetailsPage : ContentPage
+public partial class DetailsPage : ContentPage, IAsyncDisposable
 {
     private readonly DetailsViewModel _viewModel;
 
@@ -9,5 +10,13 @@ public partial class DetailsPage : ContentPage
 		InitializeComponent();
         _viewModel = viewModel;
         BindingContext = _viewModel;
+    }
+
+    public async ValueTask DisposeAsync() => await _viewModel.StopHubConnection();
+
+    protected override async void OnDisappearing()
+    {
+        base.OnDisappearing();
+       await _viewModel.StopHubConnection();
     }
 }
