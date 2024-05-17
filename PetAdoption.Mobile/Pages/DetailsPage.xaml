@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="PetAdoption.Mobile.Pages.DetailsPage"
              xmlns:vm ="clr-namespace:PetAdoption.Mobile.ViewModels"
              xmlns:controls ="clr-namespace:PetAdoption.Mobile.Controls"
@@ -19,7 +20,11 @@
                     JustifyContent="SpaceBetween"
                     >
             <Border Style="{StaticResource iconBtnContainer}">
-                <Image Source="left_arrow"/>
+                <Image Source="left_arrow">
+                    <Image.Behaviors>
+                        <toolkit:IconTintColorBehavior TintColor="{StaticResource Primary}"/>
+                    </Image.Behaviors>
+                </Image>
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding GoBackCommand}">
                         
@@ -43,6 +48,9 @@
                             <Setter Property="Source" Value="heart_filled"></Setter>
                         </DataTrigger>
                     </Image.Triggers>
+                    <Image.Behaviors>
+                        <toolkit:IconTintColorBehavior TintColor="{StaticResource Primary}"/>
+                    </Image.Behaviors>
                 </Image>
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer  Command="{Binding ToggleFavoriteCommand}"/>

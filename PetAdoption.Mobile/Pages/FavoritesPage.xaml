@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="PetAdoption.Mobile.Pages.FavoritesPage"
              xmlns:vm ="clr-namespace:PetAdoption.Mobile.ViewModels"
              xmlns:controls ="clr-namespace:PetAdoption.Mobile.Controls"
@@ -37,6 +38,9 @@
                                                     <Setter Property="Source" Value="heart"></Setter>
                                                 </DataTrigger>
                                             </Image.Triggers>
+                                            <Image.Behaviors>
+                                                <toolkit:IconTintColorBehavior TintColor="{StaticResource Primary}"/>
+                                            </Image.Behaviors>
                                         </Image>
                                         <Border.GestureRecognizers>
                                             <TapGestureRecognizer Command="{Binding Source={x:RelativeSource AncestorType={x:Type vm:FavoritesViewModel}}, Path=ToggleFavoriteCommand}"
@@ -51,7 +55,10 @@
                                         TextColor="{StaticResource Primary}"
                                         HorizontalOptions="Center"/>
                             </VerticalStackLayout>
-
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Source={x:RelativeSource AncestorType={x:Type vm:FavoritesViewModel}}, Path=GoToDetailsPageCommand}"
+CommandParameter="{Binding Id}" />
+                            </Border.GestureRecognizers>
                         </Border>
 
                     </DataTemplate>
@@ -59,5 +66,11 @@
             </CollectionView>
             
         </ScrollView>
+        <ActivityIndicator IsRunning="{Binding IsBusy}"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           Color="{StaticResource Primary}">
+            
+        </ActivityIndicator>
     </Grid>
 </ContentPage>

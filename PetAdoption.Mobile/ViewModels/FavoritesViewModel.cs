@@ -18,7 +18,8 @@ namespace PetAdoption.Mobile.ViewModels
             _authService = authService;
         }
 
-        public ObservableCollection<PetSlim> Pets { get; set; } = new();
+        [ObservableProperty]
+        public ObservableCollection<PetSlim> _pets  = new();
 
         public async Task InitializeAsync()
         {
@@ -59,9 +60,31 @@ namespace PetAdoption.Mobile.ViewModels
         }
 
         [RelayCommand]
-        private async Task ToggleFavorite()
+        private async Task ToggleFavoriteAsync(int petId)
         {
+            try
+            {
 
+            
+                var pet = Pets.FirstOrDefault(p => p.Id == petId);
+                if(pet is not null)
+                {
+                    IsBusy = true;
+                    pet.IsFavorite =  false;
+                    await _userApi.ToggleFavoritesAsync(petId);
+
+                    Pets.Remove(pet);
+                }
+                   
+            }
+            catch(Exception ex)
+            {
+                
+            }
+            finally
+            {
+                IsBusy = false;
+            }
         }
     }
 }

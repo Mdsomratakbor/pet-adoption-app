@@ -8,13 +8,13 @@ public partial class FavoritesPage : ContentPage
 	{
 		InitializeComponent();
         _viewModel = viewModel;
- 
+        BindingContext = _viewModel;
     }
 
     protected override async void OnAppearing()
     {
         base.OnAppearing();
         await _viewModel.InitializeAsync();
-        BindingContext = _viewModel;
+       
     }
 }
