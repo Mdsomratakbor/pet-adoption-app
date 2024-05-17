@@ -21,5 +21,8 @@ namespace PetAdoption.Mobile.Services
 
         [Get("/api/user/view-pet-details/{petId}")]
         Task<ApiResponseDto<PetDetailDto>> GetPetsDetailsAsync(int petId);
+
+        [Post("/api/user/change-password")]
+        Task<ApiResponse> ChangePasswordAsync(SingleValueDto<string> newPassword);
     }
 }

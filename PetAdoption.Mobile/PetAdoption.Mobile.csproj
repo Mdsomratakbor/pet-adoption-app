@@ -69,6 +69,7 @@
 	  <None Remove="Resources\Images\left_arrow.svg" />
 	  <None Remove="Resources\Images\list.svg" />
 	  <None Remove="Resources\Images\right_arrow.svg" />
+	  <None Remove="Resources\Images\undraw_confirmed.svg" />
 	  <None Remove="Resources\Images\user.svg" />
 	</ItemGroup>
 

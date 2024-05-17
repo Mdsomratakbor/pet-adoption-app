@@ -6,5 +6,7 @@ namespace PetAdoption.Api.Services.Interfaces
     {
         Task<ApiResponseDto<AuthResponseDto>> LoginAsync(LoginRequestDto dto);
         Task<ApiResponseDto<AuthResponseDto>> RegisterAsync(RegisterRequestDto dto);
+
+        Task<ApiResponse> ChangePasswordAsync(int userid,string newPassword);
     }
 }

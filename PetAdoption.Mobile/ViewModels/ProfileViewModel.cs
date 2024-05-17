@@ -10,11 +10,13 @@ namespace PetAdoption.Mobile.ViewModels
     {
         private readonly AuthService _authService;
         private readonly CommonService _commonService;
+        private readonly IUserApi _userApi;
 
-        public ProfileViewModel(AuthService authService, CommonService commonService)
+        public ProfileViewModel(AuthService authService, CommonService commonService, IUserApi userApi)
         {
             _authService = authService;
             _commonService = commonService;
+            _userApi = userApi;
             _commonService.LoginStatusChanged += OnLoginStatusChanged; 
             SetUesrInfo();
         }
@@ -73,6 +75,27 @@ namespace PetAdoption.Mobile.ViewModels
                 _authService.Logout();
                 await GoToAsync($"//{nameof(HomePage)}");
             }
+        }
+
+        [RelayCommand]
+
+        private async Task ChangePasswordAsync()
+        {
+            if (!_authService.IsLoggedIn)
+            {
+                await ShowToastAsync("You need to be logged in to change your password");
+                return;
+            }
+
+            var newPassword =await App.Current.MainPage.DisplayPromptAsync("Change Password", "Change Password", placeholder:"Enter new Password");
+            if (!string.IsNullOrWhiteSpace(newPassword))
+            {
+                IsBusy = true;
+                await _userApi.ChangePasswordAsync(new SingleValueDto<string>(newPassword));
+                IsBusy = false;
+                await ShowToastAsync($"Change password successfully");
+            }
+
         }
     }
 }

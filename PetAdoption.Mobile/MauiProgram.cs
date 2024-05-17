@@ -44,6 +44,8 @@ namespace PetAdoption.Mobile
 
             services.AddTransientWithShellRoute<DetailsPage, DetailsViewModel>(nameof(DetailsPage));
 
+            services.AddTransientWithShellRoute<AdoptionsPage,MyAdoptionsViewModel>(nameof(AdoptionsPage));
+
             services.AddTransient<AuthService>();
 
             services.AddSingleton<CommonService>();

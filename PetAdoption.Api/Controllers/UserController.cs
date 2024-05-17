@@ -15,11 +15,13 @@ namespace PetAdoption.Api.Controllers
     {
         private readonly IUserPetService _userPetService;
         private readonly IPetService _petService;
+        private readonly IAuthService _authService;
 
-        public UserController(IUserPetService userPetService, IPetService petService)
+        public UserController(IUserPetService userPetService, IPetService petService, IAuthService authService)
         {
             _userPetService = userPetService;
             _petService = petService;
+            _authService = authService;
         }
 
         /// HAKE: THERE HAVE A ISSUE
@@ -43,5 +45,9 @@ namespace PetAdoption.Api.Controllers
         [HttpGet("view-pet-details/{petId:int}")]
         public async Task<ApiResponseDto<PetDetailDto>> GetPetsDetailsAsync(int petId) =>
        await _petService.GetPetsDetailsAsync(petId, userId);
+
+        [HttpPost("change-password")]
+        public async Task<ApiResponse> ChangePassword(SingleValueDto<string> newPassword)=>
+           await _authService.ChangePasswordAsync(userId, newPassword.Value);
     }
 }

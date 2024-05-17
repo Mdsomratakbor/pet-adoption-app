@@ -116,6 +116,7 @@ namespace PetAdoption.Mobile.ViewModels
                 var apiResponse = await _userApi.AdoptPetAsync(PetId);
                 if (apiResponse.IsSuccess)
                 {
+                    PetDetail.AdoptionStatus = Shared.Enumerations.AdoptionStatus.Adopted;
                     await GoToAsync(nameof(AdoptionSuccessPage));
                 }
                 else

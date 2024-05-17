@@ -89,6 +89,7 @@ namespace PetAdoption.Api.Services
                     UserId = userId,
                     PetId = petId,
                 };
+                _context.UserAdoption.Add(userAdoption); 
                 await _context.SaveChangesAsync();
                 return ApiResponse.Success();
             }
