@@ -3,6 +3,7 @@ using PetAdoption.Shared;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Net.Http.Json;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -11,13 +12,14 @@ using System.Threading.Tasks;
 namespace PetAdoption.Mobile.ViewModels
 {
     [QueryProperty(nameof(PetId), nameof(PetId))]
-    public partial class DetailsViewModel: BaseViewModel
+    public partial class DetailsViewModel : BaseViewModel
     {
         private readonly IPetsApi _petsApi;
         private readonly AuthService _authService;
         private readonly IUserApi _userApi;
 
-        public DetailsViewModel(IPetsApi petsApi, AuthService authService, IUserApi userApi) {
+        public DetailsViewModel(IPetsApi petsApi, AuthService authService, IUserApi userApi)
+        {
             _petsApi = petsApi;
             _authService = authService;
             _userApi = userApi;
@@ -29,18 +31,18 @@ namespace PetAdoption.Mobile.ViewModels
         private Pet _petDetail = new();
 
 
-        async partial  void OnPetIdChanging(int petId)
+        async partial void OnPetIdChanging(int petId)
         {
             IsBusy = true;
             try
             {
                 var apiResponse = _authService.IsLoggedIn ?
-                    await _userApi.GetPetsDetailsAsync(petId):
+                    await _userApi.GetPetsDetailsAsync(petId) :
                     await _petsApi.GetPetsDetailsAsync(petId);
 
                 if (apiResponse.IsSuccess)
                 {
-                   var petDto = apiResponse.Data;
+                    var petDto = apiResponse.Data;
                     PetDetail = new()
                     {
                         AdoptionStatus = petDto.AdoptionStatus,
@@ -49,7 +51,7 @@ namespace PetAdoption.Mobile.ViewModels
                         Description = petDto.Description,
                         GenderDisplay = petDto.GenderDisplay,
                         GenderImage = petDto.GenderImage,
-                        Id= petDto.Id,
+                        Id = petDto.Id,
                         Image = petDto.Image,
                         IsFavorite = petDto.IsFavorite,
                         Name = petDto.Name,
@@ -90,12 +92,47 @@ namespace PetAdoption.Mobile.ViewModels
                 await _userApi.ToggleFavoritesAsync(PetId);
                 IsBusy = false;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 IsBusy = false;
                 PetDetail.IsFavorite = !PetDetail.IsFavorite;
                 await ShowAlertAsync("Error in toggling favorite status", ex.Message);
             }
         }
+
+
+        [RelayCommand]
+        private async Task AdoptNowAsync()
+        {
+            if (!_authService.IsLoggedIn && await ShowConfirmAsync("Not Logged In", $"You need to be logged in to adopt a pet {Environment.NewLine} Do you want to go to login page?", "Yes", "No"))
+            {
+
+                await GoToAsync($"//{nameof(LoginRegistrationPage)}");
+                return;
+            }
+            IsBusy = true;
+            try
+            {
+                var apiResponse = await _userApi.AdoptPetAsync(PetId);
+                if (apiResponse.IsSuccess)
+                {
+                    await GoToAsync(nameof(AdoptionSuccessPage));
+                }
+                else
+                {
+                    await ShowAlertAsync("Error in adoption", apiResponse.Message);
+                }
+                IsBusy = false;
+            }
+            catch (Exception ex)
+            {
+                await ShowAlertAsync("Error in adoption", ex.Message);
+            }
+            finally
+            {
+                IsBusy = false;
+            }
+        }
+
     }
 }

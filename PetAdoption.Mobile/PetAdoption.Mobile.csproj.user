@@ -17,6 +17,9 @@
     <MauiXaml Update="Pages\AdoptionsPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Pages\AdoptionSuccessPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Pages\AllPetsPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
