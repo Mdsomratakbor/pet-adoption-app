@@ -21,7 +21,7 @@
 		<Nullable>enable</Nullable>
 
 		<!-- Display name -->
-		<ApplicationTitle>PetAdoption.Mobile</ApplicationTitle>
+		<ApplicationTitle>Pet Adoption</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.petadoption.mobile</ApplicationId>
@@ -40,10 +40,13 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<!--<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appicon.svg" Color="#512BD4" /> -->  
+		
+			<MauiIcon Include="Resources\AppIcon\appicon.svg" Color="#512BD4" />
+
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Splash\splash_new.svg" Color="#f97461" BaseSize="128,128" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -71,6 +74,7 @@
 	  <None Remove="Resources\Images\right_arrow.svg" />
 	  <None Remove="Resources\Images\undraw_confirmed.svg" />
 	  <None Remove="Resources\Images\user.svg" />
+	  <None Remove="Resources\Splash\splash_new.svg" />
 	</ItemGroup>
 
 	<ItemGroup>

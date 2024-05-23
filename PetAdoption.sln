@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetAdoption.Api", "PetAdoption.Api\PetAdoption.Api.csproj", "{C8527A61-F493-4931-A22D-C71D2E76FFC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetAdoption.Api", "PetAdoption.Api\PetAdoption.Api.csproj", "{C8527A61-F493-4931-A22D-C71D2E76FFC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetAdoption.Mobile", "PetAdoption.Mobile\PetAdoption.Mobile.csproj", "{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetAdoption.Mobile", "PetAdoption.Mobile\PetAdoption.Mobile.csproj", "{8EB1D25A-EF17-40CD-8C41-C76D9082A0DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetAdoption.Shared", "PetAdoption.Shared\PetAdoption.Shared.csproj", "{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetAdoption.Shared", "PetAdoption.Shared\PetAdoption.Shared.csproj", "{8F4D7E5A-F90A-4CD6-A67E-883DA76FF24D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
