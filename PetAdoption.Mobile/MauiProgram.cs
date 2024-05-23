@@ -64,12 +64,7 @@ namespace PetAdoption.Mobile
                 string token = string.Empty;
                 var commonService = sp.GetService<CommonService>();
 
-                if (commonService.Token == null)
-                {
-                   var authService = sp.GetService<AuthService>();
-                    token = authService.GetUser().Token;
-                    
-                }
+               
                 return new()
                 {
                     AuthorizationHeaderValueGetter = (_, __) => Task.FromResult(commonService?.Token ?? token)

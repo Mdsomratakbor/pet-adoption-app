@@ -79,7 +79,7 @@ namespace PetAdoption.Mobile.ViewModels
             }
             catch(Exception ex)
             {
-                
+                await ShowAlertAsync("Error in toggle pets", ex.Message);
             }
             finally
             {
